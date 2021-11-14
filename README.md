@@ -1,5 +1,5 @@
 1) Start the application
-2) Open Console fire following commands:
+2) Open Console and fire the following commands:
    1) curl -i http://localhost:8080/bars/1 --> should result in HTTP/1.1 401 **"Unauthorized"** 
    2) curl -i http://localhost:8080/foos/1 --> should result in HTTP/1.1 401 **"Unauthorized"**
    3) curl -i http://localhost:8080/ --> should result in HTTP/1.1 200 **Welcome**
