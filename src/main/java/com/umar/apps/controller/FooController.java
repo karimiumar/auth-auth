@@ -10,7 +10,7 @@ public class FooController {
 
     @ResponseBody
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
-    @PreAuthorize("hasRole('ROLE_USER')")
+    @PreAuthorize("hasRole('USER')")
     public String findOne(@PathVariable("id") final Long id) {
         return new Foo().toString();
     }
